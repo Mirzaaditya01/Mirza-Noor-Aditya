@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toko Roti Sepotong</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      /* Animasi scrolling untuk carousel */
+      @keyframes scroll {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-50%);
+        }
+      }
+      .animate-scroll {
+        display: flex;
+        animation: scroll 20s linear infinite;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50">
+    <header class="p-6 bg-yellow-500 text-white text-center shadow-md">
+      <h1 class="text-3xl font-bold">Toko Roti Sepotong</h1>
+      <p class="text-lg">Nikmati Sepotong Kebahagiaan di Setiap Gigitan</p>
+      <nav class="text-white py-2">
+        <div class="container mx-auto flex justify-between items-center px-4">
+          <ul class="flex mx-auto flex justify-between item-center space-x-6">
+            <li><a href="index.html" class="hover:underline">Home</a></li>
+            <li><a href="menu.html" class="hover:underline">Daftar Menu</a></li>
+            <li><a href="contact.html" class="hover:underline">Contact</a></li>
+            <li><a href="order.html" class="hover:underline">Pemesanan</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section class="relative w-full overflow-hidden h-64 bg-gray-100 mt-8">
+      <div id="carousel" class="flex items-center space-x-4 animate-scroll">
+        <img
+          src="images/roti.jpg"
+          alt="Roti 1"
+          class="w-full object-cover h-64"
+        />
+        <img
+          src="images/roti.jpg"
+          alt="Roti 2"
+          class="w-full object-cover h-64"
+        />
+        <img
+          src="images/roti.jpg"
+          alt="Roti 3"
+          class="w-full object-cover h-64"
+        />
+        <img
+          src="images/roti.jpg"
+          alt="Roti 4"
+          class="w-full object-cover h-64"
+        />
+        <img
+          src="images/roti.jpg"
+          alt="Roti 1"
+          class="w-full object-cover h-64"
+        />
+        <img
+          src="images/roti.jpg"
+          alt="Roti 2"
+          class="w-full object-cover h-64"
+        />
+        <img
+          src="images/roti.jpg"
+          alt="Roti 3"
+          class="w-full object-cover h-64"
+        />
+        <img
+          src="images/roti.jpg"
+          alt="Roti 4"
+          class="w-full object-cover h-64"
+        />
+      </div>
+    </section>
+    <section class="mt-10 mx-auto max-w-4xl space-y-8">
+      <div class="border-b-2 pb-6">
+        <h2 class="text-2xl font-bold text-gray-700 mb-2">Tentang Kami</h2>
+        <div class="flex space-x-4">
+          <p class="w-1/2 text-gray-600">
+            Toko Roti Sepotong berdiri sejak tahun 2000 dengan visi menghadirkan
+            roti berkualitas tinggi untuk semua kalangan. Kami selalu menjaga
+            rasa dan kualitas produk kami.
+          </p>
+          <img
+            src="images/logo.png"
+            alt="Tentang Kami"
+            class="w-1/2 object-cover"
+          />
+        </div>
+      </div>
+      <div class="border-b-2 pb-6">
+        <h2 class="text-2xl font-bold text-gray-700 mb-2">Produk Kami</h2>
+        <div class="flex space-x-4">
+          <img
+            src="images/keranjang.png"
+            alt="Produk Kami"
+            class="w-1/2 object-cover"
+          />
+          <p class="w-1/2 text-gray-600">
+            Kami menawarkan berbagai jenis roti, mulai dari roti manis, roti
+            gurih, hingga roti khusus untuk acara istimewa. Semua roti dibuat
+            dengan bahan berkualitas.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="mt-10 mx-auto max-w-4xl border-b-2 pb-6">
+      <h2 class="text-2xl font-bold text-gray-700 mb-2">Visi dan Misi Kami</h2>
+      <p class="text-gray-600">
+        Visi kami adalah menjadi toko roti pilihan utama masyarakat dengan
+        menghadirkan produk berkualitas tinggi. Misi kami adalah memberikan
+        pelayanan terbaik dan menjaga kepuasan pelanggan dengan produk-produk
+        yang sehat dan lezat.
+      </p>
+    </section>
+    <section class="mt-10 mx-auto max-w-4xl grid grid-cols-2 gap-8">
+      <div>
+        <h2 class="text-2xl font-bold text-gray-700 mb-2">Lokasi Kami</h2>
+        <p class="text-gray-600">
+          Toko Roti Sepotong tersedia di berbagai kota di Indonesia. Silakan
+          kunjungi outlet kami yang terdekat dengan Anda!
+        </p>
+        <div class="mt-4">
+          <iframe
+            src="https://www.google.com/maps/embed?..."
+            width="100%"
+            height="200"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+      <div>
+        <h2 class="text-2xl font-bold text-gray-700 mb-2">
+          Testimoni Pelanggan
+        </h2>
+        <p class="text-gray-600">
+          "Rasanya enak banget, tidak pernah mengecewakan!" - Rina
+        </p>
+        <p class="text-gray-600 mt-4">
+          "Selalu jadi pilihan utama saat ada acara keluarga." - Budi
+        </p>
+        <p class="text-gray-600 mt-4">
+          "Pelayanan ramah dan cepat. Roti selalu segar." - Ayu
+        </p>
+      </div>
+    </section>
+    <footer class="p-6 bg-yellow-500 text-white text-center mt-10">
+      <p>&copy; 2024 Toko Roti Sepotong - Semua Hak Dilindungi</p>
+    </footer>
+  </body>
+</html>
